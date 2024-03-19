@@ -33,8 +33,10 @@ public class ProdutosDAO {
             int rowsAffected = prep.executeUpdate();
             if (rowsAffected > 0) {
                 System.out.println("Cadastro realizado com sucesso!");
+                JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!");
             } else {
                 System.out.println("Falha ao realizar cadastro.");
+                JOptionPane.showMessageDialog(null, "Falha ao realizar cadastro.");
             }
         } catch (Exception erro){
             System.out.println("Erro ao cadastrar produto: " + erro.getMessage());
